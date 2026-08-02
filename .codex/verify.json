@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "scope": "private-local-single-user",
+  "secret_scan": false,
+  "checks": [
+    {
+      "name": "ESLint",
+      "command": "npm.cmd",
+      "arguments": ["run", "lint"],
+      "timeout_seconds": 300,
+      "required": true
+    },
+    {
+      "name": "TypeScript",
+      "command": "npm.cmd",
+      "arguments": ["run", "typecheck"],
+      "timeout_seconds": 300,
+      "required": true
+    },
+    {
+      "name": "Unit and component tests",
+      "command": "npm.cmd",
+      "arguments": ["run", "test"],
+      "timeout_seconds": 300,
+      "required": true
+    },
+    {
+      "name": "Production build",
+      "command": "npm.cmd",
+      "arguments": ["run", "build"],
+      "timeout_seconds": 300,
+      "required": true
+    }
+  ]
+}
+
