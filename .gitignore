@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+output/playwright/*
+!output/playwright/.gitkeep
+playwright-report/
+test-results/
+*.log
+
