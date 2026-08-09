@@ -16,6 +16,7 @@ Implementation is complete on `codex/mock-telemetry-dashboard`. The project is a
 - Neutral `Car 01` / `Test Circuit` identity.
 - Coolant warning uses two-second dwell and five-second clear hysteresis.
 - Remote link loss freezes values and exposes sample age.
+- GitHub Actions runs locked dependency installation, lint, typecheck, tests, and production build on pull requests and pushes to `main`.
 
 ## Changed files
 
