@@ -6,7 +6,7 @@ Provide a polished local dashboard that demonstrates the visual experience of re
 
 ## Current status
 
-Implementation is complete on `codex/mock-telemetry-dashboard`. The project is a private local/single-user visual prototype with deterministic simulated data.
+Implementation is complete on `codex/mock-telemetry-dashboard`. The project is a private local/single-user visual prototype with deterministic simulated data. It is published to the private `Angry-TacoZ/race-telemetry` repository with draft PR #1 open against `main`.
 
 ## Decisions
 
@@ -25,7 +25,7 @@ Implementation is complete on `codex/mock-telemetry-dashboard`. The project is a
 
 ## Verification
 
-- Canonical verifier passed on 2026-08-02: ESLint, TypeScript, 14 unit/component tests, and production build.
+- Canonical verifier passed on 2026-08-09: ESLint, TypeScript, 14 unit/component tests, and production build.
 - Predeployment secret/API exposure scan passed.
 - Source inspection found no application network, Firebase, or WebSocket calls.
 - Playwright exercised healthy, warning, critical, expanded-control, and stale-link states with zero console errors.
@@ -34,7 +34,7 @@ Implementation is complete on `codex/mock-telemetry-dashboard`. The project is a
 
 ## Next task
 
-Show the local demo, then decide whether the next coherent change is team branding or a separately designed real telemetry adapter.
+Review and merge draft PR #1, then decide whether the next coherent change is team branding or a separately designed real telemetry adapter.
 
 ## Risks or blockers
 
