@@ -33,7 +33,7 @@ export class SimulationEngine {
   tick(realDeltaSeconds: number): SimulationSnapshot {
     const boundedDelta = Math.min(Math.max(realDeltaSeconds, 0), 0.25)
     if (this.linkLost) {
-      this.age += boundedDelta
+      this.age += Math.max(realDeltaSeconds, 0)
       return this.snapshot()
     }
 

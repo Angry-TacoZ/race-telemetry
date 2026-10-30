@@ -17,11 +17,11 @@ describe('SimulationEngine', () => {
     const before = engine.getSnapshot().sample
     engine.setLinkLost(true)
     engine.tick(0.25)
-    engine.tick(0.25)
+    engine.tick(3.5)
     const stale = engine.getSnapshot()
 
     expect(stale.sample).toEqual(before)
-    expect(stale.sampleAge).toBeCloseTo(0.5)
+    expect(stale.sampleAge).toBeCloseTo(3.75)
     expect(stale.linkState).toBe('stale')
 
     engine.setLinkLost(false)
