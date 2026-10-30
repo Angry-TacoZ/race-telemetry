@@ -1,5 +1,7 @@
 # Local Mock Race Telemetry Dashboard
 
+> **Project status:** Development of this project has ceased.
+
 A presentation-ready, engineer-facing race telemetry dashboard driven entirely by deterministic mock data. It runs locally and does not connect to a vehicle, Firebase, a backend, or any external API.
 
 > **SIMULATED DATA:** This project demonstrates the user interface only. It is not suitable for vehicle monitoring or operational decisions.
