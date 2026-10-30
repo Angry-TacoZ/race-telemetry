@@ -265,6 +265,26 @@ input:focus-visible {
 .link-stale .charts-column,
 .link-stale .track-map { filter: saturate(0.45); }
 
+@media (max-width: 1279px), (max-height: 719px) {
+  html, body, #root { min-width: 0; min-height: 100%; height: auto; overflow: visible; }
+  .dashboard { display: flex; flex-direction: column; height: auto; min-height: 100vh; animation: none; }
+  .top-bar { order: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .product-lockup { grid-column: 1 / -1; min-height: 58px; }
+  .top-stat, .link-status, .clock { min-height: 55px; }
+  .demo-controls { position: relative; top: auto; right: auto; order: 1; align-items: stretch; padding: 10px 14px; }
+  .demo-toggle { min-height: 44px; justify-content: space-between; }
+  .demo-panel { width: 100%; }
+  .demo-panel button { min-height: 44px; }
+  .link-toggle { min-height: 44px; }
+  .workspace { order: 2; grid-template-columns: minmax(0, 1fr); }
+  .charts-column { grid-template-rows: repeat(4, 120px); }
+  .track-workspace { min-height: 380px; }
+  .track-heading { padding-right: 20px; }
+  .engineer-alert { order: 3; min-height: 90px; }
+  .signal-rail { order: 4; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .signal-value { min-height: 74px; }
+}
+
 @media (max-height: 800px) {
   .chart-values { gap: 14px; }
   .track-map { inset-top: 7%; }
